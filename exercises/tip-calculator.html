@@ -9,6 +9,33 @@
     // create a Tip calcuator function that takes in three things: 1) meal price, 2) Tax Rate 3) Tip Rate
     // It should return a value which you can console.log.
 
+    /*
+    function taxCalc (price, tax) {
+      return price * tax 
+    }
+
+    var subtotal = taxCalc(50, 1.13);
+    var subtotal2 = subtotal.toFixed(2);
+    console.log(subtotal2);
+
+    function tipCalc (subtotal, tip) {
+      return subtotal * tip
+    }
+
+    var total = tipCalc(subtotal, 1.15);
+    var total2 = total.toFixed(2);
+    console.log(total2);
+
+    */
+
+    function restaurantBill(price, tax, tip) {
+      return (price + (price * tax)) * tip + (price + (price * tax))
+    }
+
+    var total = restaurantBill(100, 0.13, 0.15);
+    var totalRound = total.toFixed(2);
+    console.log(totalRound);
+
     // eg: var total = restaurantBill(100,0.13,0.15);
     // console.log("Your total bill is " + total);
 

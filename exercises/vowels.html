@@ -1,33 +1,60 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Function</title>
-</head>
-<body>
 
-  <script>
-  
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
     // Write a function `charIsVowel(c)` that takes a character (i.e. a string of length 1) as argument and returns true if it is a vowel, false otherwise. E.g. `charIsVowel("b")` returns `false`.
+
+    function charIsVowel(c) { 
+        var char = c.toLowerCase();
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            return true
+        } else {
+            return false
+        }
+    }
 
 
     // once done, create seperate if statements for the following and log "yes it is a vowel / no it isn't a vowel"
 
+    var vowel = charIsVowel("v");
+    console.log(vowel);
+
+
     // Check if capital A is a vowel
 
+    var vowel = charIsVowel("A");
+    console.log(vowel);
 
     // check if c isn't s vowel (HINT: Remember opposites with !)
 
+    var vowel = !charIsVowel("d");
+    console.log(vowel);
 
+    
     // check if lowercase e AND uppercase O is a vowel
+
+    var vowel = charIsVowel("e") && charIsVowel("O");
+    console.log(vowel);
 
 
     // check if either x or u is a vowel
 
+    var vowel = charIsVowel("x") || charIsVowel("u");
+    console.log(vowel);
+
     // check that h isn't a vowel and e is a vowel
 
-  </script>
+    var vowel = !charIsVowel("h") && charIsVowel("e");
+    console.log(vowel);
 
-  <p>Nothing to see here! Open up your console to see what JavaScript is doing.</p>
+    </script>
+    <p>Nothing to see here! Open up your console to see what JavaScript is doing.</p>
 </body>
+
 </html>

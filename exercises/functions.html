@@ -13,7 +13,7 @@
 
       // 1. The following function isn't printing anything to the console. Can you spot the syntax error? Be sure to check your console for errors.
 
-      function iLoveCoffee{
+      function iLoveCoffee () {
         console.log("Coffee is delicious.");
       }
       iLoveCoffee();
@@ -21,11 +21,19 @@
 
       // 2. The following function isn't printing anything to the console.  What did we forget?
 
-      function iLovePizza(){
+      function iLovePizza() {
         console.log("Pizza is my favourite food!");
       }
 
+      iLovePizza();
+
       // 3. Write a function `singMeASong()` that logs the text "Hey, I just met you, And this is crazy,But here's my number, So call me, maybe!" to the console.
+
+      function singMeASong() {
+        console.log("Hey, I just met you, And this is crazy,But here's my number, So call me, maybe!");
+      }
+
+      singMeASong();
 
 
       // 4. Change this `iReallyLovePizza` function to accept a single `topping` argument, then log the argument to the console.
@@ -33,18 +41,61 @@
       function iReallyLovePizza(){
         console.log("I love pizza!");
         console.log("And my favourite topping is...");
+        console.log(topping);
         //log your favourite topping to the console here
       }
+      
+      var topping = prompt("What is your favourite topping?");
+      iReallyLovePizza()
 
 
       // 5. Write a function with one parameter, `whatsForDinner(meal)`, which alerts the name of the meal passed to it. Call your function three times with a different meal argument each time.
 
+      function whatsForDinner(meal) {
+        alert("We're eating " + meal + " for dinner today!");
+      }
+
+      // one way 
+      /*
+      var meal = "pizza";
+      whatsForDinner(meal)
+      meal = "pasta";
+      whatsForDinner(meal)
+      meal = "pad thai";
+      whatsForDinner(meal)
+      */
+
+      whatsForDinner("pizza");
+      whatsForDinner("pasta");
+      whatsForDinner("pad thai");
+
+
+
 
       // 6. Write a function `multiply(n1, n2)` that returns the value of n1 and n2 multiplied together. *Hint:* We use the `*` character to denote multiplication in JavaScript. Make sure you test to see that your function does what you expect.
+
+      function multiply(n1, n2) {
+        return n1 * n2;
+      }
+
+      var num = multiply(5, 5);
+      console.log(num);
 
 
       // 7. Write a function `greaterThanThree(n)` which logs "Yes" to the console if a n is greater than three. *Hint:* You will need to use the `>` comparrison operator and a conditional statement inside your function.
 
+      function greaterThanThree(n) {
+        if (n > 3){
+          console.log(n);
+          console.log("Yes");
+        } else {
+          console.log(n);
+          console.log("No");
+        }
+      }
+
+      var n = prompt("Choose a number.");
+      greaterThanThree(n);
 
   </script>
 
