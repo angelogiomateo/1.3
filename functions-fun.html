@@ -7,21 +7,49 @@
 <body>
 	<script>
 
-		/* var name = prompt('What is your name?');
+			/* var name = prompt('What is your name?');
 
-		function helloWorld () {
-		console.log(`Hello World, ${name}!`);
-	}
+			function helloWorld () {
+			console.log(`Hello World, ${name}!`);
+		}
 
-	helloWorld();
-		*/
+		helloWorld();
 		
-	function praiseDog(dogname) {
-		console.log("Good dog " + dogname);
-	}
 
-	praiseDog("Scout");
+		function praiseDog(dogname) {
+			console.log("Good dog " + dogname);
+		}
 
-</script>
+		praiseDog("Scout");
+
+		*/
+
+		/*
+
+
+		function sayHello(firstName, lastName, mood, occupation) {
+			alert(`Hi there, ${firstName} ${lastName}! You look ${mood} today! Must be from your work as a ${occupation}.`);
+		}
+
+		var firstNameInput = prompt("What is your name?");
+		var lastNameInput = prompt("What is your name?")
+
+		sayHello(firstNameInput, lastNameInput, "happy", "salesperson");
+		sayHello("Ronald", "McDonald", "jolly", "clown");
+
+		*/
+
+
+		//example of checking to see if parameter has value
+		function weatherReport(temp, conditions = "fair", location) {
+				console.log(`The weather is ${temp}, ${conditions} in ${location}`);
+		}
+
+		weatherReport(31, "rainy", "Toronto");
+
+		//example of default argument ES6
+
+
+	</script>
 </body>
 </html>
